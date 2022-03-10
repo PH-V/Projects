@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cyborg/bootstrap.min.css" integrity="sha384-nEnU7Ae+3lD52AK+RGNzgieBWMnEfgTbRHIwEvp1XXPdqdO6uLTd/NwXbzboqjc2" crossorigin="anonymous">
+    <title>GitHub Repos</title>
+    
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-info mb-3">
+        <div class="container">
+            <a class="navbar-brand" href="#">GitHub Repos Finder</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="card text-white card-body">  
+            <h1 class="card-title mb-4">Search Repositories</h1>
+            <div class="input-group mb-3">
+                <input type="text" id="repoName" class="form-control" placeholder="Repository name...">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-info text-white" id="searchRepo" type="submit">Search</button>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <div id="repos-list" class="container mt-3">
+        <div class="list-group text-white">
+            
+          </div>
+    </div>
+
+    <script src="github.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
